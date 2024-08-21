@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/global/global.css" />
+    <link rel="stylesheet" href="/css/main/main.css" />
+    <link rel="stylesheet" href="/css/loading/loading.css" />
+    <title>Eeezo Books</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <a href="../main/main.html">
+          <h1 class="title"><span class="highlight">Eeezo</span>Book</h1>
+        </a>
+        <div class="search-box">
+          <div class="search-tag">
+            <button>
+              도서명으로 검색
+              <span></span>
+            </button>
+            <div class="search-tag-list">
+              <button>도서명으로 검색</button>
+              <button>작가명으로 검색</button>
+            </div>
+          </div>
+          <form class="search-form" id="searchForm">
+            <input class="search-input" type="text" placeholder="검색어를 입력하세요" />
+            <button type="submit" class="search-button"></button>
+          </form>
+        </div>
+        <div class="like-list">
+          <span class="like"></span>
+          <a href="../like/like.html"><p>찜 목록</p></a>
+        </div>
+      </header>
+      <span class="line"></span>
+      <section class="best-seller">
+        <h3>베스트 셀러</h3>
+        <div class="slide-wapper">
+          <div class="slide-buttons">
+            <img class="prev" src="../../public/prev.svg" alt="prev" />
+            <img class="next" src="../../public/next.svg" alt="next" />
+          </div>
+        </div>
+      </section>
+      <span class="line"></span>
+      <section class="new-books">
+        <h3>이번 달 새로 나온 도서</h3>
+        <div class="books">
+          <div class="book">
+            <img src="../../public/image 24.png" alt="책" />
+            <p class="book-title">루시 이야기</p>
+          </div>
+          <div class="book">
+            <img src="../../public/image 24.png" alt="책" />
+            <p class="book-title">루시 이야기</p>
+          </div>
+          <div class="book">
+            <img src="../../public/image 24.png" alt="책" />
+            <p class="book-title">루시 이야기</p>
+          </div>
+          <div class="book">
+            <img src="../../public/image 24.png" alt="책" />
+            <p class="book-title">루시 이야기</p>
+          </div>
+          <div class="book">
+            <img src="../../public/image 24.png" alt="책" />
+            <p class="book-title">루시 이야기</p>
+          </div>
+        </div>
+      </section>
+      <span class="line"></span>
+    </main>
+      <section class="picks">
+        <div class="titles">
+          <h3>
+            <span class="highlight">Eeezo</span>BOOKS
+            <span class="highlight">Picks</span>
+          </h3>
+          <p>주목할만한 신간을 추천해드려요</p>
+          <button>더 많은 신간 보러가기</button>
+        </div>
+        <div class="books">
+          <div class="book">
+            <img src="../../public/image 24.png" alt="책" />
+            <p class="book-title">루시 이야기</p>
+          </div>
+          <div class="book">
+            <img src="../../public/image 24.png" alt="책" />
+            <p class="book-title">루시 이야기</p>
+          </div>
+          <div class="book">
+            <img src="../../public/image 24.png" alt="책" />
+            <p class="book-title">루시 이야기</p>
+          </div>
+          <div class="book">
+            <img src="../../public/image 24.png" alt="책" />
+            <p class="book-title">루시 이야기</p>
+          </div>
+        </div>
+      </section>
+      <span class="line"></span>
+      <main>
+      <section class="blogger-best-seller">
+        <h3>블로거 베스트셀러</h3>
+        <div class="books">
+          <div class="book">
+            <img src="../../public/image 24.png" alt="책" />
+            <p class="book-title">루시 이야기</p>
+          </div>
+          <div class="book">
+            <img src="../../public/image 24.png" alt="책" />
+            <p class="book-title">루시 이야기</p>
+          </div>
+          <div class="book">
+            <img src="../../public/image 24.png" alt="책" />
+            <p class="book-title">루시 이야기</p>
+          </div>
+          <div class="book">
+            <img src="../../public/image 24.png" alt="책" />
+            <p class="book-title">루시 이야기</p>
+          </div>
+          <div class="book">
+            <img src="../../public/image 24.png" alt="책" />
+            <p class="book-title">루시 이야기</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="loading-screen">
+      <div class="spinner"></div>
+      <h1 class="loading-title"><span class="highlight">Eeezo</span>Book</h1>
+    </div>
+  </body>
+  
+</script>
+  <script  src="../../javascript/main/slider.js"></script>
+  <script  src="../../javascript/main/fetchMainBooks.js"></script>
+  <script src="../../javascript/common/search.js"></script>
+  <script src="../../javascript/common/headerBtn.js"></script>
+</html>

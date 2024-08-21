@@ -1,0 +1,139 @@
+@import url("../global/global.css");
+.search-title {
+  font-weight: 700;
+  font-size: 25px;
+  margin: 70px 0px 44px 0px;
+  .highlight {
+    color: #3e9f31;
+  }
+  .result-count {
+    display: inline-block;
+  }
+}
+.search-list {
+  display: flex;
+  justify-content: space-between;
+  .side-menu {
+    .side-menu-titles {
+      display: flex;
+      justify-content: space-between;
+      .side-title {
+        font-size: 18px;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+      span {
+        cursor: pointer;
+        display: flex;
+        align-items: start;
+        color: gainsboro;
+      }
+    }
+
+    button {
+      margin-bottom: 8px;
+      font-size: 14px;
+      padding: 14px 110px 14px 15px;
+      border-radius: 6px;
+      border: 1px solid gainsboro;
+      background-color: white;
+      display: block;
+      white-space: nowrap;
+      max-width: 160px;
+      cursor: pointer;
+      &:active,
+      &:focus,
+      &:hover {
+        border-color: #3a9945;
+      }
+      &.active {
+        border-color: #3a9945;
+      }
+    }
+  }
+  .books {
+    .book-items {
+      width: 1100px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 23px;
+      height: 630px;
+      cursor: pointer;
+      .no-data {
+        font-size: 50px;
+        grid-column: 1 / -1;
+      }
+      .book {
+        .book-cover {
+          width: 190px;
+          height: 270px;
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+
+          &:hover .book-overlay,
+          &:focus-within .book-overlay {
+            display: flex;
+          }
+          .book-overlay {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            top: 0px;
+            left: 0px;
+            position: absolute;
+            .info-icon {
+              margin-left: 24px;
+              color: white;
+            }
+          }
+        }
+        .book-title {
+          font-weight: 700;
+          font-size: 15px;
+          margin-bottom: 3px;
+        }
+        .book-author {
+          color: gray;
+          font-size: 12px;
+        }
+      }
+    }
+    .pagination {
+      grid-column: 1 / -1;
+      display: flex;
+      justify-content: center;
+      margin-top: 120px;
+      button {
+        margin: 0 5px;
+        padding: 10px 15px;
+        background-color: white;
+        border: none;
+        color: gray;
+        border-radius: 100%;
+        cursor: pointer;
+        &:hover,
+        &:active,
+        &:focus {
+          background-color: #ddd;
+          color: white;
+        }
+        &.active {
+          background-color: #ddd;
+          color: white;
+        }
+      }
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
